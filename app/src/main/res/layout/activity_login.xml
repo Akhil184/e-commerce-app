@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/generate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="244dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/card3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="56dp"
+        android:text="    Sign in"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/card3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="246dp"
+                android:text="Login in"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@+id/textView13"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="-8dp"
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Mobile No/Email Id"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="126dp"
+                android:layout_height="49dp"
+                android:layout_below="@+id/editTextTextPersonName"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="177dp"
+                android:layout_marginEnd="225dp"
+                android:text="Password"
+                android:textColor="@color/blue"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName1"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_below="@+id/textView14"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-14dp"
+                android:layout_marginEnd="-2dp"
+                android:background="@drawable/gg"
+                android:drawableLeft="@drawable/ic_baseline_remove_red_eye_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Password/MPIN"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextTextPersonName1"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gg"
+                android:backgroundTint="@color/blue"
+                android:text="login"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="323dp" />
+
+            <ImageButton
+                android:id="@+id/btRegister"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/bg_ui"
+                android:src="@drawable/ic_add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="62dp"
+            android:layout_height="74dp"
+            android:layout_alignTop="@+id/cv"
+            android:layout_alignRight="@+id/card3"
+            android:layout_marginRight="-20dp"
+            android:layout_marginTop="-20dp"
+            android:elevation="10dp">
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="153dp"
+        android:text="Construction Wala"
+        android:textColor="@color/yellow"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="160dp"
+        android:text="Forgotten password"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="382dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="-3dp"
+        android:text="Build your home easily without Problem and hesitation"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>
